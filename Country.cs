@@ -6,17 +6,24 @@ namespace PeopleManagement.Models.Telecommunications
 {
     public class Country
     {
-        string codeCountry;
+        string codeISO156A2;
+        string codeISO156A3;
+        short codeISO156C;
         string nameCountry;
-        string pathFlag; 
+        string pathFlag;
+        short telephonePrefix;
  
         IEnumerable<CountryTelephoneNumber> countryTelephoneNumbers;
-
-        public string CodeCountry { get => codeCountry; set => codeCountry = value; }
+        //TODO    2 letters
+        public string CodeISO156A2 { get => codeISO156A2; set => codeISO156A2 = value; }
         public string NameCountry { get => nameCountry; set => nameCountry = value; }
         public string PathFlag { get => pathFlag; set => pathFlag = value; }
         public  IEnumerable<CountryTelephoneNumber> TelephoneNumbers { get => countryTelephoneNumbers; set => countryTelephoneNumbers = value; }
-
-        private void 
+        //TODO    3 letters
+        
+        public string CodeISO156A3 { get => codeISO156A3; set => codeISO156A3 = value; }
+        //TODO    3 digits
+        public short CodeISO156C { get => codeISO156C; set => codeISO156C = value; }
+        public short TelephonePrefix { get => telephonePrefix; set => telephonePrefix = value; }
     }
 }

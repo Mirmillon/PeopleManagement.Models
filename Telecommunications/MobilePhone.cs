@@ -5,9 +5,9 @@ using System.Threading;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public class Mobile : CountryTelephoneNumber
+    public abstract class MobilePhone : CountryTelephoneNumber
     {
-        public Mobile()
+        public MobilePhone()
         {
             base.TelephoneNumberKind = TelephoneNumberKind.Mobile;
         }

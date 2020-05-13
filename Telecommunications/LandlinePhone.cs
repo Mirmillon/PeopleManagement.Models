@@ -4,9 +4,10 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-   public class Landline : CountryTelephoneNumber
+   public abstract class LandlinePhone : CountryTelephoneNumber
     {
-        public Landline()
+        
+        public LandlinePhone()
         {
             base.TelephoneNumberKind = TelephoneNumberKind.Landline;      
         }

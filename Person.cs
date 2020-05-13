@@ -13,7 +13,7 @@ namespace PeopleManagement.Models
         DateTime dateOfDead;
         string picturePath;
         Gender gender;
-        Phone phone;
+        Mobile mobile;
 
 
         public int PersonId { get => personId; set => personId = value; }
@@ -45,7 +45,7 @@ namespace PeopleManagement.Models
         public DateTime DateOfDead { get => dateOfDead; set => dateOfDead = value; }
         public string PicturePath { get => picturePath; set => picturePath = value; }
         public Gender Gender { get => gender; set => gender = value; }
-        public Phone Phone { get => phone; set => phone = value; }
+        public Mobile Mobile { get => mobile; set => mobile = value; }
 
         private string SearchFirstName (string s)
         {

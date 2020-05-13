@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public class TollFree: CountryTelephoneNumber
+    public abstract class TollFreePhone: CountryTelephoneNumber
     {
-        public TollFree()
+        public TollFreePhone()
         {
             base.TelephoneNumberKind = TelephoneNumberKind.TollFree;
         }

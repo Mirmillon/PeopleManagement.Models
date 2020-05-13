@@ -6,8 +6,20 @@ namespace PeopleManagement.Models.Telecommunications
 {
     public class CountryTelephoneNumber:TelephoneNumber
     {
-        short internationalPrefix;
+        Country country;
+        string phoneNumber;
 
-        public short InternationalPrefix { get => internationalPrefix; set => internationalPrefix = value; }
+        public CountryTelephoneNumber(short prefix)
+        {
+            country.TelephonePrefix = prefix;
+        }
+
+        public CountryTelephoneNumber()
+        {
+            country = new Country();
+        }
+
+        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
+        public Country Country { get => country; set => country = value; }
     }
 }
