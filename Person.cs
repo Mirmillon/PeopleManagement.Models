@@ -20,9 +20,7 @@ namespace PeopleManagement.Models
         List<Country> countrieList;
         List<Mobile> mobilesList;
         List<Landline> landlinesList;
-
-
-
+       
 
         public int PersonId { get => personId; set => personId = value; }
         public string FirstName { 
@@ -63,7 +61,7 @@ namespace PeopleManagement.Models
             string[] prenoms = s.Split(delims);
             return prenoms[0];
         }
-
+ 
         public void SetCountry(string code)
         {
             Country c = new Country();
@@ -82,9 +80,10 @@ namespace PeopleManagement.Models
         public void SetLandline(Country c, string number)
         {
             Landline l = new Landline();
-            m.InternationalPrefix = c.TelephonePrefix;
-            m.PhoneNumber = number;
-            mobilesList.Add(m);
+            l.InternationalPrefix = c.TelephonePrefix;
+            l.PhoneNumber = number;
+            landlinesList.Add(l);
         }
+        
     }
 }

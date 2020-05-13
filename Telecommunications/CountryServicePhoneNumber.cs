@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public abstract class CountryServicePhoneNumber :ServicesPhone
+    public class CountryServicePhoneNumber :ServicesPhone
     {
         string internationalPrefix;
         string phoneNumber;

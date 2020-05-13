@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public abstract class CountryLandlineNumber : LandlinePhone
+    public class CountryLandlineNumber : LandlinePhone
     {
         string internationalPrefix;
         string phoneNumber;

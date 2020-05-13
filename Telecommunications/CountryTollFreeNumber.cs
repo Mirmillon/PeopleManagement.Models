@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public abstract class   CountryTollFreeNumber : TollFreePhone
+    public class   CountryTollFreeNumber : TollFreePhone
     {
         string internationalPrefix;
         string phoneNumber;
