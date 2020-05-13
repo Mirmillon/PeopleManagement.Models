@@ -1,4 +1,7 @@
-﻿using System;
+﻿using PeopleManagement.Models.Telecommunications;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace PeopleManagement.Models
 {
@@ -14,6 +17,11 @@ namespace PeopleManagement.Models
         string picturePath;
         Gender gender;
         Mobile mobile;
+        List<Country> countrieList;
+        List<Mobile> mobilesList;
+        List<Landline> landlinesList;
+
+
 
 
         public int PersonId { get => personId; set => personId = value; }
@@ -36,7 +44,6 @@ namespace PeopleManagement.Models
                 {
                     value.Trim();
                 }
-
             }
         }
         public string LastName { get => lastName; set => lastName = value.Trim(); }
@@ -46,12 +53,38 @@ namespace PeopleManagement.Models
         public string PicturePath { get => picturePath; set => picturePath = value; }
         public Gender Gender { get => gender; set => gender = value; }
         public Mobile Mobile { get => mobile; set => mobile = value; }
+        public List<Country> CountrieList { get => countrieList; set => countrieList = value; }
+        public List<Mobile> MobilesList { get => mobilesList; set => mobilesList = value; }
+        internal List<Landline> LandlinesList { get => landlinesList; set => landlinesList = value; }
 
         private string SearchFirstName (string s)
         {
             char[] delims = new char[] { ' ' };
             string[] prenoms = s.Split(delims);
             return prenoms[0];
+        }
+
+        public void SetCountry(string code)
+        {
+            Country c = new Country();
+            c.CodeISO156A2 = code;
+            countrieList.Add(c);
+        }
+
+        public void SetMobile(Country  c, string number)
+        {
+            Mobile  m = new Mobile();
+            m.InternationalPrefix = c.TelephonePrefix;
+            m.PhoneNumber = number;
+            mobilesList.Add(m);
+        }
+
+        public void SetLandline(Country c, string number)
+        {
+            Landline l = new Landline();
+            m.InternationalPrefix = c.TelephonePrefix;
+            m.PhoneNumber = number;
+            mobilesList.Add(m);
         }
     }
 }

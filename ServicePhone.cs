@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    class ServicePhone : ServicesPhone
+    class ServicePhone : CountryServicePhoneNumber
     {
         int servicePhoneId;
 

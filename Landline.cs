@@ -5,10 +5,10 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    class Landline : LandlinePhone
+    class Landline : CountryLandlineNumber
     {
         int landlineId;
-        string phone
+        
 
         public int LandlineId { get => landlineId; set => landlineId = value; }
     }

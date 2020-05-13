@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public abstract class ServicesPhone : CountryTelephoneNumber
+    public abstract class ServicesPhone : TelephoneNumber
     {
         public ServicesPhone()
         {

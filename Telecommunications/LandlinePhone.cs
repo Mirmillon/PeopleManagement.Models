@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-   public abstract class LandlinePhone : CountryTelephoneNumber
+   public abstract class LandlinePhone : TelephoneNumber
     {
         
         public LandlinePhone()

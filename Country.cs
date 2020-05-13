@@ -11,19 +11,19 @@ namespace PeopleManagement.Models.Telecommunications
         short codeISO156C;
         string nameCountry;
         string pathFlag;
-        short telephonePrefix;
+        string  telephonePrefix;
  
-        IEnumerable<CountryTelephoneNumber> countryTelephoneNumbers;
+        IEnumerable<CountryMobileNumber> countryTelephoneNumbers;
         //TODO    2 letters
         public string CodeISO156A2 { get => codeISO156A2; set => codeISO156A2 = value; }
         public string NameCountry { get => nameCountry; set => nameCountry = value; }
         public string PathFlag { get => pathFlag; set => pathFlag = value; }
-        public  IEnumerable<CountryTelephoneNumber> TelephoneNumbers { get => countryTelephoneNumbers; set => countryTelephoneNumbers = value; }
+        public  IEnumerable<CountryMobileNumber> TelephoneNumbers { get => countryTelephoneNumbers; set => countryTelephoneNumbers = value; }
         //TODO    3 letters
         
         public string CodeISO156A3 { get => codeISO156A3; set => codeISO156A3 = value; }
         //TODO    3 digits
         public short CodeISO156C { get => codeISO156C; set => codeISO156C = value; }
-        public short TelephonePrefix { get => telephonePrefix; set => telephonePrefix = value; }
+        public string  TelephonePrefix { get => telephonePrefix; set => telephonePrefix = value; }
     }
 }

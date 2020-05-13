@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    public class Mobile :MobilePhone
+    public class Mobile :CountryMobileNumber
     {
         int mobileId;
        

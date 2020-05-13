@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    public class TollFree :TollFreePhone
+    public class TollFree :CountryTollFreeNumber
     {
         int tollFreeId;
 
