@@ -16,7 +16,7 @@ namespace PeopleManagement.Models
         DateTime dateOfDead;
         string picturePath;
         Gender gender;
-        Mobile mobile;
+        int  mobileId;
         List<Country> countrieList;
         List<Mobile> mobilesList;
         List<Landline> landlinesList;
@@ -50,10 +50,11 @@ namespace PeopleManagement.Models
         public DateTime DateOfDead { get => dateOfDead; set => dateOfDead = value; }
         public string PicturePath { get => picturePath; set => picturePath = value; }
         public Gender Gender { get => gender; set => gender = value; }
-        public Mobile Mobile { get => mobile; set => mobile = value; }
+        public int MobileId { get => mobileId; set => mobileId = value; }
         public List<Country> CountrieList { get => countrieList; set => countrieList = value; }
         public List<Mobile> MobilesList { get => mobilesList; set => mobilesList = value; }
         internal List<Landline> LandlinesList { get => landlinesList; set => landlinesList = value; }
+        
 
         private string SearchFirstName (string s)
         {

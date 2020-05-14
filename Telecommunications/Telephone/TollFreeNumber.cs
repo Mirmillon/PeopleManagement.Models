@@ -4,18 +4,18 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public class   CountryTollFreeNumber : TollFreePhone
+    public abstract class TollFreeNumber
     {
-        string internationalPrefix;
+        TelephoneNumberKind numberKind;
         string phoneNumber;
-
-        public CountryTollFreeNumber()
+        public TollFreeNumber()
         {
-
+            numberKind = TelephoneNumberKind.TollFree;
         }
 
+       
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 
-        public string InternationalPrefix { get => internationalPrefix; set => internationalPrefix = value; }
+      
     }
 }

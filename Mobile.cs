@@ -5,13 +5,14 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    public class Mobile :CountryMobileNumber
+    public class Mobile : MobileNumber
     {
         int mobileId;
+        int countryId;
+        int ownerId;
+        TelephoneConfidentiality confidentiality;
        
         public int MobileId { get => mobileId; set => mobileId = value; }
-      
-
-
+        public int CountryId { get => countryId; set => countryId = value; }
     }
 }

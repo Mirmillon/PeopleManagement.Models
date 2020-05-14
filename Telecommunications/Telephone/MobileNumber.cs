@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public class CountryServicePhoneNumber :ServicesPhone
+    public abstract class MobileNumber 
     {
-        string internationalPrefix;
+      
         string phoneNumber;
+        TelephoneNumberKind numberKind;
 
-        public CountryServicePhoneNumber():base()
+        public MobileNumber()
         {
-                
+            numberKind = TelephoneNumberKind.Mobile;
         }
 
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 
-        public string InternationalPrefix { get => internationalPrefix; set => internationalPrefix = value; }
+       
     }
 }
