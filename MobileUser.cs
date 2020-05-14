@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PeopleManagement.Models
 {
-    class MobileUser
+    public class MobileUser
     {
         int personId;
         int mobileId;
