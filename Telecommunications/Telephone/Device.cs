@@ -4,11 +4,10 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public enum TelephoneUse
+    public enum Device
     {
-        Private,
-        Personal,
-        Professional
-
+        Mobile,
+        Landline,
+        Fax
     }
 }

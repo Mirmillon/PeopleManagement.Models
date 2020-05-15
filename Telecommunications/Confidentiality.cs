@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PeopleManagement.Models.Telecommunications
 {
-    public enum TelephoneConfidentiality
+    public enum Confidentiality
     {
         None,
         Medium,
