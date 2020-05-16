@@ -7,7 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleManagement.Models", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleManagement.Web", "..\PeopleManagement.Web\PeopleManagement.Web.csproj", "{055C10A3-A6B2-4039-936A-B313A4B81175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.API", "..\PeopleManagement.API\PeopleManagement.API.csproj", "{0790F239-EE3D-46CA-92F7-C001D661F6B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleManagement.API", "..\PeopleManagement.API\PeopleManagement.API.csproj", "{0790F239-EE3D-46CA-92F7-C001D661F6B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleMedicalManagement.Models", "..\PeopleMedicalManagement.Models\PeopleMedicalManagement.Models.csproj", "{2CA76313-6E7A-4EA4-925E-F6376FADE7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NtpManagement.Models", "..\NtpManagement.Models\NtpManagement.Models.csproj", "{E7E58D1F-F187-4454-8B3D-6922A5594CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PregnancyManagement.Models", "..\PregnancyManagementModel\PregnancyManagement.Models.csproj", "{0CE83A4C-ACC0-4FD4-A95D-2A19A257FDB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstetricalultrasoundScanManegement.Models", "..\ObstetricalultrasoundScanManegement.Models\ObstetricalultrasoundScanManegement.Models.csproj", "{8121B9CA-E11D-424B-B5B1-2F4D2BAD0CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildbirthManagement.Models", "..\ChildbirthManagement.Models\ChildbirthManagement.Models.csproj", "{032F15DC-D8CE-48C0-BDCC-0EC0938CA823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalRecordManagement.Models", "..\MedicalRecordManagement.Models\MedicalRecordManagement.Models.csproj", "{73487674-2B34-45AC-9CAD-A81A333966C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CimManagements.Models", "..\CimManagements.Models\CimManagements.Models.csproj", "{6041886E-18CA-41B2-9C03-BAB31E3F2A64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +41,34 @@ Global
 		{0790F239-EE3D-46CA-92F7-C001D661F6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0790F239-EE3D-46CA-92F7-C001D661F6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0790F239-EE3D-46CA-92F7-C001D661F6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA76313-6E7A-4EA4-925E-F6376FADE7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA76313-6E7A-4EA4-925E-F6376FADE7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA76313-6E7A-4EA4-925E-F6376FADE7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA76313-6E7A-4EA4-925E-F6376FADE7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E58D1F-F187-4454-8B3D-6922A5594CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E58D1F-F187-4454-8B3D-6922A5594CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E58D1F-F187-4454-8B3D-6922A5594CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E58D1F-F187-4454-8B3D-6922A5594CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE83A4C-ACC0-4FD4-A95D-2A19A257FDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE83A4C-ACC0-4FD4-A95D-2A19A257FDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE83A4C-ACC0-4FD4-A95D-2A19A257FDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE83A4C-ACC0-4FD4-A95D-2A19A257FDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8121B9CA-E11D-424B-B5B1-2F4D2BAD0CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8121B9CA-E11D-424B-B5B1-2F4D2BAD0CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8121B9CA-E11D-424B-B5B1-2F4D2BAD0CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8121B9CA-E11D-424B-B5B1-2F4D2BAD0CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032F15DC-D8CE-48C0-BDCC-0EC0938CA823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032F15DC-D8CE-48C0-BDCC-0EC0938CA823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032F15DC-D8CE-48C0-BDCC-0EC0938CA823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032F15DC-D8CE-48C0-BDCC-0EC0938CA823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73487674-2B34-45AC-9CAD-A81A333966C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73487674-2B34-45AC-9CAD-A81A333966C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73487674-2B34-45AC-9CAD-A81A333966C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73487674-2B34-45AC-9CAD-A81A333966C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6041886E-18CA-41B2-9C03-BAB31E3F2A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6041886E-18CA-41B2-9C03-BAB31E3F2A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6041886E-18CA-41B2-9C03-BAB31E3F2A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6041886E-18CA-41B2-9C03-BAB31E3F2A64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

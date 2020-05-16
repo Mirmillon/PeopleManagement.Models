@@ -49,7 +49,7 @@ namespace PeopleManagement.Models
         [Display(Name = "Using")]
         public EnumTable.Use Use { get; set; }
 
-
+        public List<PhoneUser> PhoneUsers { get; set; }
 
 
 

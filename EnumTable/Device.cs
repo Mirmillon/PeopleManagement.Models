@@ -17,6 +17,6 @@ namespace PeopleManagement.Models.EnumTable
         [MaxLength(15)]
         public string Label { get; set; }
 
-        List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<PhoneNumber> PhoneNumbers { get; set; }
     }
 }

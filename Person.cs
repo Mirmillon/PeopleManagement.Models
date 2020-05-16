@@ -70,8 +70,13 @@ namespace PeopleManagement.Models
             return prenoms[0];
         }
 
-        List<PhoneNumber> PhoneNumbers { get; set; }
-        List<Email> Emails { get; set; }
+        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<Email> Emails { get; set; }
+        public List<PhoneUser> PhoneUsers { get; set; }
+
+        public List<Home> Homes { get; set; }
+
+       
 
         [Display(Name = "Gender")]
         public int GenderId { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PeopleManagement.Models.Telecommunications;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,6 +18,7 @@ namespace PeopleManagement.Models.EnumTable
         [MaxLength(15)]
         public string Label { get; set; }
 
-        List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<TelephoneNumberFormat> TelephoneNumberFormats { get; set; }
     }
 }

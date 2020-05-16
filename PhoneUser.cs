@@ -7,14 +7,17 @@ namespace PeopleManagement.Models
 {
     public class PhoneUser
     {
-        int personId;
-        int mobileId;
-   
-        bool mainNumber;
 
-        public int PersonId { get => personId; set => personId = value; }
-        public int MobileId { get => mobileId; set => mobileId = value; }
 
-        public bool MainNumber { get => mainNumber; set => mainNumber = value; }
+        public bool MainNumber { get; set; }
+
+        public int PersonId { get; set; }
+        public Person Person { get; set; }
+        public int PhoneNumberId { get ; set; }
+        public PhoneNumber PhoneNumber { get; set; }
+
+
+
+
     }
 }

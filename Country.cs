@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using PeopleManagement.Models.Telecommunications;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -30,8 +31,21 @@ namespace PeopleManagement.Models
         [MaxLength(6)]
         [Display(Name = "Phone Prefix")]
         public string TelephonePrefix { get; set ; }
+        //NEW
+        [Display(Name = "Digit Number")]
+        public short? NumberDigitZipCode { get; set; }
+        [Display(Name = "Digit Number")]
+        [DataType(DataType.Text)]
+        [MaxLength(6)]
+        public string ZipCodeFormat { get; set; }
 
 
-        List<PhoneNumber> PhoneNumbers { get; set; }
+
+        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<TelephoneNumberFormat> TelephoneNumberFormats { get; set; }
+
+        public List<HomeCountry> HomeCountries { get; set; }
+
+
     }
 }
