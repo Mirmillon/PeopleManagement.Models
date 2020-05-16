@@ -45,6 +45,7 @@ namespace PeopleManagement.Models
         public List<TelephoneNumberFormat> TelephoneNumberFormats { get; set; }
 
         public List<HomeCountry> HomeCountries { get; set; }
+        public List<LanguageCountry> LanguageCountries { get; set; }
 
 
     }

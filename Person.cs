@@ -54,6 +54,8 @@ namespace PeopleManagement.Models
 
 
 
+
+
         public Person()
         {
             Alive = 'Y';
@@ -73,14 +75,14 @@ namespace PeopleManagement.Models
         public List<PhoneNumber> PhoneNumbers { get; set; }
         public List<Email> Emails { get; set; }
         public List<PhoneUser> PhoneUsers { get; set; }
-
         public List<Home> Homes { get; set; }
-
-       
+        public List<LanguagePerson> LanguagePersons { get; set; }
 
         [Display(Name = "Gender")]
         public int GenderId { get; set; }
         public Gender gender { get; set; }
+
+
 
 
 
