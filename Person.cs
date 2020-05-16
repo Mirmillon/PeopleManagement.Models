@@ -1,4 +1,5 @@
-﻿using PeopleManagement.Models.Telecommunications;
+﻿using PeopleManagement.Models.EnumTable;
+using PeopleManagement.Models.Telecommunications;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,8 +50,9 @@ namespace PeopleManagement.Models
         public DateTime? DateOfDead { get; set; }
         [Display(Name = "Picture")]
         public string PicturePath { get; set; }
-        [Display(Name = "Gender")]
-        public Gender? Gender { get; set; }
+       
+
+
 
         public Person()
         {
@@ -69,6 +71,11 @@ namespace PeopleManagement.Models
         }
 
         List<PhoneNumber> PhoneNumbers { get; set; }
+        List<Email> Emails { get; set; }
+
+        [Display(Name = "Gender")]
+        public int GenderId { get; set; }
+        public Gender gender { get; set; }
 
 
 

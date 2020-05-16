@@ -1,4 +1,5 @@
-﻿using PeopleManagement.Models.Telecommunications;
+﻿using PeopleManagement.Models.EnumTable;
+using PeopleManagement.Models.Telecommunications;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,15 +18,8 @@ namespace PeopleManagement.Models
         [Display(Name = "Number")]
         public int Number { get; set; }
        
-      
-        [Display(Name = "Building Id")]
-        public int? BuildingId { get; set; }
-
-
-        [Display(Name = "Device")]
-        public Device Device { get; set; }
-        [Display(Name = "Number Kind")]
-        public TelephoneNumberKind TelephoneNumberKind { get; set; }
+            
+       
 
         // FK
         [Display(Name = "Country Code")]
@@ -40,8 +34,21 @@ namespace PeopleManagement.Models
 
         //TRE
         public int ConfidentialityId { get; set; }
+        [Display(Name = "Confidentiality")]
         public Confidentiality Confidentiality  { get; set; }
-       
+        
+        public int DeviceId { get; set; }
+        [Display(Name = "Device")]
+        public EnumTable.Device Device { get; set; }
+        
+        public int NumberKindId { get; set; }
+        [Display(Name = "Number Kind")]
+        public NumberKind NumberKind { get; set; }
+
+        public int UseId { get; set; }
+        [Display(Name = "Using")]
+        public EnumTable.Use Use { get; set; }
+
 
 
 
